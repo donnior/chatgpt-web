@@ -178,7 +178,7 @@ export default () => {
   }
 
   return (
-    <div my-6>
+    <div my-6 class="p-4 rounded bg-slate-100" dark:bg-gray-900 >
       <SystemRoleSettings
         canEdit={() => messageList().length === 0}
         systemRoleEditing={systemRoleEditing}
