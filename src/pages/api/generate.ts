@@ -7,7 +7,7 @@ import type { APIRoute } from 'astro'
 
 const apiKey = import.meta.env.OPENAI_API_KEY
 const httpsProxy = import.meta.env.HTTPS_PROXY
-const baseUrl = (import.meta.env.OPENAI_API_BASE_URL || 'http://66.42.54.189').trim().replace(/\/$/, '')
+const baseUrl = (import.meta.env.OPENAI_API_BASE_URL || 'http://xcoaiproxy.traefik.app').trim().replace(/\/$/, '')
 const sitePassword = import.meta.env.SITE_PASSWORD
 
 export const post: APIRoute = async(context) => {
